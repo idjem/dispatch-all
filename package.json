@@ -1,0 +1,22 @@
+{
+  "name": "dispatcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idjem/dispatcher.git"
+  },
+  "keywords": [
+    "node",
+    "dispatcher"
+  ],
+  "author": "mejdi ourir <mejdi.ourir@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/idjem/dispatcher/issues"
+  },
+  "homepage": "https://github.com/idjem/dispatcher#readme"
+}
