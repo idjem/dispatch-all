@@ -1,3 +1,4 @@
+"use strict"
 const _prefix = 'ID_';
 
 class Dispatcher{
@@ -27,7 +28,6 @@ class Dispatcher{
    * @param payload : <payload>
    */
   dispatch(payload){
-    this._startDispatching(payload);
     for (var id in this._callbacks) {
       this._callbacks[id](payload);
     }

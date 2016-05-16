@@ -1,14 +1,14 @@
 {
   "name": "dispatch-module",
   "version": "1.0.0",
-  "description": "",
+  "description": "broadcast payloads to registered callbacks",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/idjem/dispatcher.git"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/_mocha test/"
   },
   "keywords": [
     "node",
@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/idjem/dispatcher/issues"
   },
-  "homepage": "https://github.com/idjem/dispatcher#readme"
+  "homepage": "https://github.com/idjem/dispatcher#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.4.5"
+  }
 }

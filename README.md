@@ -1,6 +1,8 @@
-# dispatcher
+# dispatch-all
 
-Used to broadcast payloads to registered callbacks. 
+Used to broadcast payloads to registered callbacks.
+- **dispatch all -> Every payload is dispatched to every registered callback
+
 
 # API
 - **register(function callback): string**
