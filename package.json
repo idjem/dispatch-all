@@ -1,24 +1,24 @@
 {
-  "name": "dispatch-module",
+  "name": "dispatch-all",
   "version": "1.1.0",
   "description": "broadcast payloads to registered callbacks",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/idjem/dispatcher.git"
-  },
-  "scripts": {
-    "test": "node node_modules/mocha/bin/_mocha test/"
+    "url": "git+https://github.com/idjem/dispatch-all.git"
   },
   "keywords": [
     "node",
     "dispatcher"
   ],
+  "scripts": {
+    "test": "node node_modules/mocha/bin/_mocha test/"
+  },
   "author": "mejdi ourir <mejdi.ourir@gmail.com>",
   "bugs": {
-    "url": "https://github.com/idjem/dispatcher/issues"
+    "url": "https://github.com/idjem/dispatch-all/issues"
   },
-  "homepage": "https://github.com/idjem/dispatcher#readme",
+  "homepage": "https://github.com/idjem/dispatch-all#readme",
   "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^2.4.5"
