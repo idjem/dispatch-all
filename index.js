@@ -11,6 +11,7 @@ class Dispatcher{
 
   constructor() {
     this._callbacks = {};
+    this._lastID    = 0;
   }
 
   /**
