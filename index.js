@@ -1,5 +1,11 @@
 "use strict"
-const _prefix = 'ID_';
+const co = require('co');
+const values   = require('mout/object/values');
+const parallel = require('co-parallel');
+
+
+const _prefix  = 'ID_';
+
 
 class Dispatcher{
 
@@ -24,15 +30,26 @@ class Dispatcher{
     delete this._callbacks[id];
   }
 
+
   /**
    * @param payload : <payload>
    */
   dispatch(payload){
-    for (var id in this._callbacks) {
-      this._callbacks[id](payload);
-    }
+    var cb = values(this._callbacks)
+    cb = cb.map(function(yiealdble){
+      return (function*(){yield yiealdble(payload)})
+    })
+
+    return co(function *(){
+      var res = yield parallel(cb, 5);
+      return res
+    })
   }
 }
 
 
 module.exports = Dispatcher;
+
+
+
+
