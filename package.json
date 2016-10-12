@@ -1,6 +1,6 @@
 {
   "name": "dispatch-all",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "broadcast payloads to registered callbacks",
   "main": "index.js",
   "repository": {
